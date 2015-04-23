@@ -12,7 +12,7 @@ class HelpGlue
     return "!h: ce message. !liens: liste des liens." 
   end
 end
-  b = IRCBot.new('irc.freenode.net', 6667, '#botstest', '[B]MicheleLouis',
+  b = IRCBot.new('irc.freenode.net', 6667, '#jesuislibre', '[B]LouiseMichel',
   { # queued messages
     /PRIVMSG [^:]+ :!h\s*/ => HelpGlue, 
   },
